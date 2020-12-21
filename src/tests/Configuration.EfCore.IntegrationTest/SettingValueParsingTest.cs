@@ -55,8 +55,6 @@ namespace Configuration.EFCore.IntegrationTest
             Assert.False(settingClass.BooleanValue);
         }
 
-
-
         [Fact]
         public void ReadAndCheckValuesForEnvironment()
         {

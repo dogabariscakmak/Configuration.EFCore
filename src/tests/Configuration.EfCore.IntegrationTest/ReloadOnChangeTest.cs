@@ -29,7 +29,8 @@ namespace Configuration.EFCore.IntegrationTest
             configuration.Sources.Clear();
             configuration.AddEFCoreConfiguration<PersonDbContext>(
                 options => options.UseSqlServer(connection),
-                reloadOnChange: true);
+                reloadOnChange: true,
+                pollingInterval: 500);
 
             //Act
             IConfigurationRoot configurationRoot = configuration.Build();
@@ -59,7 +60,8 @@ namespace Configuration.EFCore.IntegrationTest
             configuration.Sources.Clear();
             configuration.AddEFCoreConfiguration<PersonDbContext>(
                 options => options.UseSqlServer(connection),
-                reloadOnChange: true);
+                reloadOnChange: true,
+                pollingInterval: 500);
 
             //Act
             IConfigurationRoot configurationRoot = configuration.Build();

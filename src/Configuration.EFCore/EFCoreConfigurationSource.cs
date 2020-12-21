@@ -16,7 +16,7 @@ namespace Configuration.EFCore
 
         public EFCoreConfigurationSource(Action<DbContextOptionsBuilder> optionsAction, 
                                          bool reloadOnChange = false, 
-                                         int pollingInterval = 500, 
+                                         int pollingInterval = 5000, 
                                          string environment = "", 
                                          string applicationContext = "",
                                          Action<ConfigurationEFCoreLoadExceptionContext<TDbContext>> onLoadException = null)

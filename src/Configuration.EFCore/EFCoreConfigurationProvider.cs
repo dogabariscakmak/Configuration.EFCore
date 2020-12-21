@@ -31,6 +31,7 @@ namespace Configuration.EFCore
             {
                 return;
             }
+
             try
             {
                 Data = GetData();
@@ -137,7 +138,6 @@ namespace Configuration.EFCore
 
         private IDictionary<string, string> BuildSettingsDictionary(IDictionary<string, string> settingsDictionary)
         {
-            IDictionary<string, string> result = new Dictionary<string, string>();
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("{");
             foreach (KeyValuePair<string, string> setting in settingsDictionary)
