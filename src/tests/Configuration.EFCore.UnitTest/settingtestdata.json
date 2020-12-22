@@ -1,0 +1,49 @@
+{
+  "StringValue": "Answer to the Ultimate Question of Life, the Universe, and Everything",
+  "IntegerValue": 42,
+  "BooleanValue": true,
+
+  "NestedValues": {
+    "level1value": {
+      "level2value": "Ich komme aus der Tuerkei!"
+    }
+  },
+
+  "ArrayValue": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+
+  "ListValue": [
+    {
+      "Attr1": 1,
+      "Attr2": "1"
+    },
+    {
+      "Attr1": 2,
+      "Attr2": "2"
+    },
+    {
+      "Attr1": 3,
+      "Attr2": "3"
+    },
+    {
+      "Attr1": 4,
+      "Attr2": "4"
+    }
+  ],
+
+  "ClassValue": {
+    "StringValue": "Wie alt bist du?",
+    "IntegerValue": 25,
+    "BooleanValue": false
+  }
+}
