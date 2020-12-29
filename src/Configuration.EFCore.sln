@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configuration.EFCore.UnitTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configuration.EFCore.TestCommon", "tests\Configuration.EFCore.TestCommon\Configuration.EFCore.TestCommon.csproj", "{6EF46901-1177-46B6-82DE-F908A2FF90CB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configuration.EFCore.IntegrationTest", "tests\Configuration.EfCore.IntegrationTest\Configuration.EFCore.IntegrationTest.csproj", "{E1C9AACD-6E71-4DA5-9145-769551F36DAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configuration.EFCore.IntegrationTest", "tests\Configuration.EFCore.IntegrationTest\Configuration.EFCore.IntegrationTest.csproj", "{E1C9AACD-6E71-4DA5-9145-769551F36DAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
