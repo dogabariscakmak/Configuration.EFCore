@@ -74,7 +74,7 @@ namespace Configuration.EFCore.IntegrationTest
             DbConnection connection = new SqlConnection(_fixture.TestSettings.MssqlConnectionString.Replace("P@ssw0rd123", "wrongpassword"));
             EFCoreConfigurationSource<PersonDbContext> configurationSource = new EFCoreConfigurationSource<PersonDbContext>(options => options.UseSqlServer(connection),
                                                                                                                             reloadOnChange: true,
-                                                                                                                            pollingInterval: 2000,
+                                                                                                                            pollingInterval: 600,
                                                                                                                             onLoadException: exceptionContext =>
                                                                                                                             {
                                                                                                                                 exceptionContext.Ignore = true;
@@ -84,11 +84,11 @@ namespace Configuration.EFCore.IntegrationTest
 
             //Act
             Exception ex = Record.Exception(() => configurationProvider.Load());
-            await Task.Delay(3000);
+            await Task.Delay(2000);
 
             //Assert
             Assert.Null(ex);
-            Assert.Equal(2, onLoadExceptionCalledCount);
+            Assert.Equal(4, onLoadExceptionCalledCount);
         }
 
         [Fact]

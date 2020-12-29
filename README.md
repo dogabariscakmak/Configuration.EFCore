@@ -134,4 +134,4 @@ Project Link: [https://github.com/dogabariscakmak/Configuration.EFCore](https://
 [issues-url]: https://github.com/dogabariscakmak/Configuration.EFCore/issues
 [license-shield]: https://img.shields.io/github/license/dogabariscakmak/Configuration.EFCore.svg?style=flat-square
 [license-url]: https://github.com/dogabariscakmak/Configuration.EFCore/blob/master/LICENSE
-[product-screenshot]: usage.gif
+[product-screenshot]: usage.gif 
